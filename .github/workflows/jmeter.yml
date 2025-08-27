@@ -1,0 +1,36 @@
+name: Run JMeter Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  jmeter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "11"
+
+      - name: Install JMeter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jmeter
+
+      - name: Run JMeter tests
+        run: |
+          jmeter -n -t jmeter-tests/BasicTest.jmx -l results.jtl
+
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-results
+          path: results.jtl

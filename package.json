@@ -1,0 +1,23 @@
+{
+  "name": "pruebabasicacy",
+  "version": "1.0.0",
+  "description": "Project with (Cypress, Jmeter, Junit)",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://%3C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%3E@github.com/AndersonCanPer/qa-automation-ci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndersonCanPer/qa-automation-ci/issues"
+  },
+  "homepage": "https://github.com/AndersonCanPer/qa-automation-ci#readme",
+  "devDependencies": {
+    "cypress": "^15.0.0"
+  }
+}
