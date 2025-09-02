@@ -4,6 +4,7 @@ Este proyecto contiene pruebas automatizadas usando diferentes tecnologías:
 - **Cypress** → pruebas E2E de interfaz gráfica.
 - **JMeter** → pruebas de rendimiento.
 - **JUnit** → pruebas unitarias en Java con Maven.
+- **Selenium (Python)** → pruebas de UI automatizadas
   
 ## Requisitos previos
 
