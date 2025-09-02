@@ -40,6 +40,12 @@ Abre JMeter y carga el archivo:
 Para ejecutarlo en modo consola:
 jmeter -n -t ./jmeter/mi-prueba.jmx -l ./reportes/resultados.jtl
 
+# Selenium (pruebas UI)
+pip install -r requirements.txt
+
+Para correr la prueba automatizada, abre tu terminal en la raíz del proyecto y ejecuta el comando:
+pytest -v -s test_execute.py --html=ReporteHTML.html
+
 ## Integración Continua (CI)
 
 Este proyecto usa GitHub Actions para ejecutar pruebas automáticamente en cada push.
